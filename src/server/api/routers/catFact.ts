@@ -35,7 +35,7 @@ export const catFactsRouter = createTRPCRouter({
         create: {
           ...input,
           likes: 1,
-          dislikes: 0,
+          dislikes: 0
         }
       });
       return { data: upsertCatFact };
@@ -55,7 +55,7 @@ export const catFactsRouter = createTRPCRouter({
         create: {
           ...input,
           likes: 0,
-          dislikes: 1,
+          dislikes: 1
         }
       });
       return { data: upsertCatFact };
