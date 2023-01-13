@@ -12,6 +12,7 @@ datasource db {
 
 model CatFact {
     id       String @id @default(cuid())
+    text     String
     likes    Int
     dislikes Int
 }
